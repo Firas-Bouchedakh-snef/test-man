@@ -20,4 +20,4 @@ phases:
       - docker push 473868803624.dkr.ecr.eu-west-3.amazonaws.com/cicdtest:latest
       - printf '[{"name":"web","imageUri":"%s"}]' 473868803624.dkr.ecr.eu-west-3.amazonaws.com/cicdtest:latest > imagedefinitions.json
   artifacts:
-  files: imagedefinitions.json
+  files: s3://test-bucket-abc1231234/tf-test-pipeline2/build_outp/XE81tXp/imagedefinitions.json
